@@ -25,5 +25,16 @@
     },
     "suggest": {
         "twbs/bootstrap": "Bootstrap framework"
+    },
+    "autoload": {
+        "psr-4": {
+            "BoostCake\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "BoostCake\\Test\\": "tests",
+            "Cake\\Test\\" : "vendor/cakephp/cakephp/test"
+        }
     }
 }
