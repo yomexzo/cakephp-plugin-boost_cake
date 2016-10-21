@@ -1,5 +1,8 @@
 <?php
-App::uses('AppController', 'Controller');
+namespace BoostCake\Controller;
+
+use App\Controller\AppController;
+use Cake\Core\Configure;
 
 class BoostCakeController extends AppController {
 
@@ -19,11 +22,11 @@ class BoostCakeController extends AppController {
  * @throws MethodNotAllowedException
  * @return void
  */
-	public function beforeFilter() {
+	public function beforeFilter(Event $event) {
 		if (Configure::read('debug') < 1) {
 			throw new MethodNotAllowedException(__('Debug setting does not allow access to this url.'));
 		}
-		parent::beforeFilter();
+		parent::beforeFilter($event);
 	}
 
 /**

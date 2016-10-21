@@ -1,6 +1,6 @@
 <?php
 // View
-echo $this->Session->flash();
+echo $this->Flash->render();
 
 // Controller
 $this->Session->setFlash(__('Alert success message testing...'), 'alert', array(

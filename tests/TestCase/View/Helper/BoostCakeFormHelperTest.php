@@ -1,6 +1,8 @@
 <?php
-App::uses('BoostCakeFormHelper', 'BoostCake.View/Helper');
-App::uses('View', 'View');
+namespace BoostCake\Test\TestCase\View\Helper;
+
+use BoostCake\View\Helper\BoostCakeFormHelper;
+use Cake\View\View;
 
 class Contact extends CakeTestModel {
 
@@ -30,7 +32,7 @@ class Contact extends CakeTestModel {
 
 }
 
-class BoostCakeFormHelperTest extends CakeTestCase {
+class BoostCakeFormHelperTest extends TestCase {
 
 /**
  * setUp

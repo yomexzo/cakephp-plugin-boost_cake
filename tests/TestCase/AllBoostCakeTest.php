@@ -1,4 +1,6 @@
 <?php
+namespace BoostCake\Test\TestCase;
+
 class AllBoostCakeTest extends CakeTestSuite {
 
 /**

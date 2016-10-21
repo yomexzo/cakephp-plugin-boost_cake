@@ -1,8 +1,11 @@
 <?php
-App::uses('BoostCakeHtmlHelper', 'BoostCake.View/Helper');
-App::uses('View', 'View');
+namespace BoostCake\Test\TestCase\View\Helper;
 
-class BoostCakeHtmlHelperTest extends CakeTestCase {
+use BoostCake\View\Helper\BoostCakeHtmlHelper;
+use Cake\TestSuite\TestCase;
+use Cake\View\View;
+
+class BoostCakeHtmlHelperTest extends TestCase {
 
 /**
  * setUp

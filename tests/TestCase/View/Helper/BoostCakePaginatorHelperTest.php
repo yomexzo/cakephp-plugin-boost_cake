@@ -1,13 +1,17 @@
 <?php
-App::uses('View', 'View');
-App::uses('Helper', 'View');
-App::uses('BoostCakePaginatorHelper', 'BoostCake.View/Helper');
+namespace BoostCake\Test\TestCase\View\Helper;
+
+use BoostCake\View\Helper\BoostCakePaginatorHelper;
+use Cake\Core\Configure;
+use Cake\TestSuite\TestCase;
+use Cake\View\Helper;
+use Cake\View\View;
 
 /**
  * BootstrapPaginatorHelper Test Case
  *
  */
-class BoostCakePaginatorHelperTest extends CakeTestCase {
+class BoostCakePaginatorHelperTest extends TestCase {
 
 /**
  * setUp method
