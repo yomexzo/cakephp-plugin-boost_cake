@@ -93,7 +93,7 @@ class BoostCakePaginatorHelper extends PaginatorHelper {
  * @param array $disabledOptions Options for the disabled pagination link.
  * @return string A "previous" link or $disabledTitle text if the link is disabled.
  */
-    public function prev($title = null, $options = array(), $disabledTitle = null, $disabledOptions = array()) {
+    public function prev($title = '<< Previous', array $options = array(), $disabledTitle = null, $disabledOptions = array()) {
         $default = array(
             'title' => '<',
             'tag' => 'li',
@@ -136,7 +136,7 @@ class BoostCakePaginatorHelper extends PaginatorHelper {
  * @param array $disabledOptions Options for the disabled pagination link.
  * @return string A "next" link or $disabledTitle text if the link is disabled.
  */
-    public function next($title = null, $options = array(), $disabledTitle = null, $disabledOptions = array()) {
+    public function next($title = null, array $options = array(), $disabledTitle = null, $disabledOptions = array()) {
         $default = array(
             'title' => '>',
             'tag' => 'li',
@@ -176,7 +176,7 @@ class BoostCakePaginatorHelper extends PaginatorHelper {
  * @param array $options Options for the numbers
  * @return string Numbers HTML
  */
-    public function numbers($options = array()) {
+    public function numbers(array $options = array()) {
         $defaults = array(
             'tag' => 'li',
             'before' => null,
@@ -202,7 +202,7 @@ class BoostCakePaginatorHelper extends PaginatorHelper {
  * @param array $options An array of options.
  * @return string A "first" link.
  */
-    public function first($title = null, $options = array()) {
+    public function first($title = '<< first', array $options =  array()) {
         $default = array(
             'title' => '<<',
             'tag' => 'li',
@@ -232,7 +232,7 @@ class BoostCakePaginatorHelper extends PaginatorHelper {
  * @param array $options An array of options.
  * @return string A "last" link.
  */
-    public function last($title = null, $options = array()) {
+    public function last($title = 'last >>', array $options = array()) {
         $default = array(
             'title' => '>>',
             'tag' => 'li',

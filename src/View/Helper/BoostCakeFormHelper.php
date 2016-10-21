@@ -62,7 +62,7 @@ class BoostCakeFormHelper extends FormHelper {
  * @return string Completed form widget.
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html#creating-form-elements
  */
-    public function input($fieldName, $options = array()) {
+    public function input($fieldName, array $options = array()) {
         $this->_fieldName = $fieldName;
 
         $default = array(
@@ -177,8 +177,8 @@ class BoostCakeFormHelper extends FormHelper {
  * @param array $args The options for the input element
  * @return string The generated input element
  */
-    protected function _getInput($args) {
-        $input = parent::_getInput($args);
+    protected function _getInput($fieldName, $options) {
+        $input = parent::_getInput($fieldName, $options);
         if ($this->_inputType === 'checkbox' && $this->_inputOptions['checkboxDiv'] !== false) {
             $input = $this->Html->div($this->_inputOptions['checkboxDiv'], $input);
         }
@@ -265,7 +265,7 @@ class BoostCakeFormHelper extends FormHelper {
  * @return string An `<a />` element.
  * @link http://book.cakephp.org/2.0/en/core-libraries/helpers/form.html#FormHelper::postLink
  */
-    public function postLink($title, $url = null, $options = array(), $confirmMessage = false) {
+    public function postLink($title, $url = null, array $options = array(), $confirmMessage = false) {
         $block = false;
         if (!empty($options['block'])) {
             $block = $options['block'];
