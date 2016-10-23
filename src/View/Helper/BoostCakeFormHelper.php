@@ -4,12 +4,16 @@ namespace BoostCake\View\Helper;
 use App\Utility\Set;
 use Cake\View\Helper\FormHelper;
 use Cake\View\View;
+use Cake\Utility\Hash;
 
 class BoostCakeFormHelper extends FormHelper {
 
-    public $helpers = array('Html' => array(
-        'className' => 'BoostCake.BoostCakeHtml'
-    ));
+    public $helpers = array(
+        'Url',
+        'Html' => array(
+            'className' => 'BoostCake.BoostCakeHtml'
+        )
+    );
 
     protected $_divOptions = array();
 
